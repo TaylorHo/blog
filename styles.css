@@ -40,6 +40,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* HEADER - INÍCIO */
+
 header {
   width: 100%;
   height: 7rem;
@@ -77,11 +79,11 @@ header {
   justify-content: center;
 }
 
-.menu {
+.menu_desktop {
   margin-left: 3rem;
 }
 
-.menu a {
+.menu_desktop a {
   color: var(--titles-color);
   margin: auto 16px;
   font-size: 1.9rem;
@@ -90,4 +92,23 @@ header {
 .menu .current {
   color: var(--titles-color);
   font-weight: 600;
+}
+
+.menu_mobile {
+  display: none;
+}
+
+/* HEADER - FIM */
+/* MAIN - INÍCIO */
+
+
+/* MAIN - INÍCIO */
+
+@media screen and (max-width: 480px){
+  .menu_mobile {
+    display: flex;
+  }
+  .menu_desktop {
+    display: none;
+  }
 }
