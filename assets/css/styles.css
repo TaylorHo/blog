@@ -13,11 +13,12 @@
   --background-color: #fff;
   --primary-foreground-color: #4a4a4a;
   --secondary-foreground-color: #000;
+  --secondary-foreground-color-med: #00000099;
   --primary-subtle-color: #0470ee;
   --secondary-subtle-color: #f4f8fd;
   --titles-color: #333;
   --link-color: #133467;
-  --primary-border-color: #9b9b9b;
+  --primary-border-color: #ebebeb;
   --secondary-border-color: #f0f8ff;
   --article-shadow-normal: 0 10px 10px rgba(0,0,0,0.08);
   --article-shadow-hover: 0 4px 60px 0 rgba(0,0,0,0.2);
@@ -130,11 +131,11 @@ header {
 .content {
   padding: 60px 0 40px;
 }
-.content .posts {
+.posts {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   position: relative;
   margin: 0 auto;
@@ -143,38 +144,72 @@ header {
 .post {
   width: calc(33.3333% - 20px);
   height: 420px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
   margin: 0 10px 20px 10px;
   background-color: var(--background-color);
   border-radius: 10px;
   border: 1px solid var(--secondary-border-color);
   z-index: 1;
   box-shadow: var(--article-shadow-normal);
-  transition: box-shadow .25s;
+  transition: all .3s;
 }
 .post:hover {
   box-shadow: var(--article-shadow-hover);
+  border: 1px solid var(--primary-border-color);
+  transform: translateY(-1%);
+}
+.post_photo {
+  height: 220px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+.post_photo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.post_photo .tag {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  font-size: 1.4rem;
+  background-color: var(--secondary-foreground-color-med);
+  border-radius: 20px;
+  border: 2px solid var(--background-color);
+  color: var(--background-color);
+  padding: 2px 8px;
+  z-index: 1;
+  transition: all .2s;
+}
+.post_photo .tag:hover {
+  transform: translateY(-10%);
 }
 
 /* MAIN - INÍCIO */
 
 /* MEDIA QUERYES */
-@media screen and (max-width: 480px){
-  .menu_mobile {
-    display: flex;
-  }
-  .menu_desktop {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1000px){
   .post {
     width: calc(50% - 20px);
   }
 }
 
-@media screen and (max-width: 620px){
+@media screen and (max-width: 680px){
   .post {
     width: 100%;
+  }
+
+  .menu_mobile {
+    display: flex;
+  }
+  .menu_desktop {
+    display: none;
   }
 }
