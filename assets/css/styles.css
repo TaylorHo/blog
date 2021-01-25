@@ -192,6 +192,32 @@ header {
   transform: translateY(-10%);
 }
 
+.post_content {
+  flex: 1;
+  position: relative;
+  padding: 15px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 0 0 10px 10px;
+  background-color: var(--background-color);
+}
+.category a {
+  color: var(--link-color);
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.post_details {
+  width: 100%;
+  height: calc(100% - 40px);
+  color: var(--titles-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+.post_details .details {
+  font-size: 1.3rem;
+}
 /* MAIN - INÍCIO */
 
 /* MEDIA QUERYES */
