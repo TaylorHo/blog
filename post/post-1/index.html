@@ -1,11 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br" class="html">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Post</title>
+  <link rel="stylesheet" href="../../assets/css/styles.css"/>
+  <meta name="author" content="Taylor Hoffmann"/>
+  <meta name="description" content="Some description"/>
+  <link rel="canonical" href="#"/>
+  <link rel="sortcut icon" href="../../assets/img/logo.png" type="image/x-icon"/>;
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap" rel="stylesheet"/>
+  <script data-ad-client="ca-pub-5723655775210735" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 <body>
-  <p>Testando indexaçãodo GH-Pages</p>
+
+  <header>
+    <div class="inner_header">
+      <div class="menu">
+        <div class="menu_desktop">
+          <a href="#" class="current">Home</a>
+          <a href="#">Github</a>
+          <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+        </div>
+        <div class="menu_mobile">
+          <div class="toogle_color">
+            <div class="background_icon">
+              <i class="fas fa-ellipsis-v"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="toogle_color" onclick="toogleColor();">
+        <div class="background_icon">
+          <i id="moon" class="fas fa-moon"></i>
+          <i id="sun" class="fas fa-sun d-none"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrapper">
+      <h1 class="blog_name">
+        Blog
+      </h1>
+      <h3><em>An Awesome Tech Blog</em></h3>
+    </div>
+    <div class="content">
+      
+    </div>
+  </main>
+
+  <footer>
+    <div class="media_icons">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fab fa-github"></i></i></a>
+    </div>
+    <div class="copyright">
+      <p>Blog &copy; 2021 &nbsp;&bull;&nbsp; Por <a href="#">Taylor Hoffmann</a></p>
+    </div>
+  </footer>
+  <script async src="../../assets/js/darkModeToogle.js"></script>
 </body>
 </html>
